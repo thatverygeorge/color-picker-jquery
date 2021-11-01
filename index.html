@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Color Pircker</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="main">
+    <fieldset class="fieldset">
+      <legend>Select</legend>
+
+      <input class="radio radio--color fieldset__radio" type="radio" name="color" id="color" autocomplete="off" checked>
+      <label class="label fieldset__label" for="color">Text Color</label>
+
+      <input class="radio radio--background-color fieldset__radio" type="radio" name="color" id="bc-color"
+        autocomplete="off">
+      <label class="label fieldset__label" for="bc-color">Background Color</label>
+    </fieldset>
+
+    <div class="sliders-list">
+      <div class="slider slider--red sliders-list__slider" id="red"></div>
+      <div class="slider slider--green sliders-list__slider"></div>
+      <div class="slider slider--blue sliders-list__slider"></div>
+    </div>
+
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non aut accusamus quibusdam praesentium. Totam,
+      unde iusto! Corrupti, cupiditate? Hic deleniti libero minima quos harum eligendi maxime porro minus doloremque!
+    </p>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

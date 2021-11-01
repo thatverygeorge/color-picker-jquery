@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  width: 940px;
+  border: none;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  column-gap: 20px;
+}
+
+.fieldset {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.fieldset__radio {
+  display: none;
+}
+
+.label {
+  flex-basis: 200px;
+  flex-grow: 1;
+  display: block;
+  border: 2px solid black;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.radio:checked + .label {
+  background-color: blue;
+  color: white;
+}
+
+.sliders-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.slider--red .ui-slider-range,
+.slider--red .ui-state-active {
+  background-color: red;
+}
+
+.slider--red .ui-slider-handle {
+  border-color: red;
+}
+
+.slider--green .ui-slider-range,
+.slider--green .ui-state-active {
+  background-color: green;
+}
+
+.slider--green .ui-slider-handle {
+  border-color: green;
+}
+
+.slider--blue .ui-slider-range,
+.slider--blue .ui-state-active {
+  background-color: blue;
+}
+
+.slider--blue .ui-slider-handle {
+  border-color: blue;
+}
+
+.text {
+  margin: 0;
+}
